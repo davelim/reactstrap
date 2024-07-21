@@ -1,5 +1,6 @@
-import Reac from 'react';
+// https://reactstrap.github.io/?path=/docs/components-layout--layout
 import {Container, Row, Col} from 'reactstrap';
+import Tabs from './Tabs';
 import "./Grid.css";
 
 export default function Grid() {
@@ -7,7 +8,7 @@ export default function Grid() {
         <Container className="border" id="container">
           <Row className="border" id="user">
             <Col className="border" xs="4">
-              <p>Photo</p>
+              <p>Photo, img element</p>
             </Col>
             <Col className="border" xs="8">
               <Row className="border">
@@ -19,19 +20,8 @@ export default function Grid() {
             </Col>
           </Row>
           <Row className="border" id="data">
-            <Col className="border">
-                <p>Shops</p>
-            </Col>
-            <Col className="border">
-                <p>Favorites</p>
-            </Col>
-            <Col className="border">
-                <p>Reviews</p>
-            </Col>
-            <Col className="border">
-                <p>Users</p>
-            </Col>
-          </Row>
+            <Tabs/>
+        </Row>
         </Container>
     );
 }
