@@ -4,12 +4,12 @@ import "./Grid.css";
 
 export default function Grid() {
     return (
-        <Container fluid className="border" id="container">
-          <Row className="border">
-            <Col className="border" sm="4">
-              <p>Profile photo</p>
+        <Container className="border" id="container">
+          <Row className="border" id="user">
+            <Col className="border" xs="4">
+              <p>Photo</p>
             </Col>
-            <Col className="border" sm="8">
+            <Col className="border" xs="8">
               <Row className="border">
                 <p>Name</p>
               </Row>
@@ -18,17 +18,17 @@ export default function Grid() {
               </Row>
             </Col>
           </Row>
-          <Row className="border">
-            <Col>
+          <Row className="border" id="data">
+            <Col className="border">
                 <p>Shops</p>
             </Col>
-            <Col>
+            <Col className="border">
                 <p>Favorites</p>
             </Col>
-            <Col>
+            <Col className="border">
                 <p>Reviews</p>
             </Col>
-            <Col>
+            <Col className="border">
                 <p>Users</p>
             </Col>
           </Row>
